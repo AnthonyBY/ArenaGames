@@ -24,6 +24,7 @@ class ArenaViewModel: ObservableObject {
     @Published var state: State = .login
    // var coinsList
     @Published var coins: [CoinModel] = availableCoins
+    @Published var authService = AuthService()
 
     init() {
 

@@ -34,6 +34,13 @@ struct ArenaListView: View {
                 }
             }
         }
+        .task {
+            do {
+                 try await viewModel.authService.signIn(login: "anthonyby7", password: "Funjy777!")
+             } catch {
+                 print("Failed to sign in: \(error)")
+             }
+        }
         .padding()
     }
 }
