@@ -7,29 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		92B047362CFB3FC500C28924 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92B047352CFB3FC500C28924 /* WidgetKit.framework */; };
-		92B047382CFB3FC500C28924 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92B047372CFB3FC500C28924 /* SwiftUI.framework */; };
-		92B047472CFB3FC800C28924 /* ArenaGamesWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 92B047332CFB3FC500C28924 /* ArenaGamesWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		921856692CFB5A8F006672FE /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92B047352CFB3FC500C28924 /* WidgetKit.framework */; };
+		9218566A2CFB5A8F006672FE /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92B047372CFB3FC500C28924 /* SwiftUI.framework */; };
+		921856792CFB5A91006672FE /* ArenaGamesWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 921856682CFB5A8F006672FE /* ArenaGamesWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		92B047452CFB3FC800C28924 /* PBXContainerItemProxy */ = {
+		921856772CFB5A91006672FE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 92B047032CFA3A2300C28924 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 92B047322CFB3FC500C28924;
+			remoteGlobalIDString = 921856672CFB5A8F006672FE;
 			remoteInfo = ArenaGamesWidgetExtension;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		92B0474C2CFB3FC800C28924 /* Embed Foundation Extensions */ = {
+		9218567E2CFB5A91006672FE /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				92B047472CFB3FC800C28924 /* ArenaGamesWidgetExtension.appex in Embed Foundation Extensions */,
+				921856792CFB5A91006672FE /* ArenaGamesWidgetExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -37,52 +37,67 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		92B0470B2CFA3A2300C28924 /* ArenaGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArenaGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		92B047332CFB3FC500C28924 /* ArenaGamesWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ArenaGamesWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9218564D2CFB59F5006672FE /* ArenaGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArenaGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		921856682CFB5A8F006672FE /* ArenaGamesWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ArenaGamesWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B047352CFB3FC500C28924 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		92B047372CFB3FC500C28924 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		92B047482CFB3FC800C28924 /* Exceptions for "ArenaGamesWidget" folder in "ArenaGamesWidgetExtension" target */ = {
+		9218567A2CFB5A91006672FE /* Exceptions for "ArenaGamesWidget" folder in "ArenaGamesWidgetExtension" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 92B047322CFB3FC500C28924 /* ArenaGamesWidgetExtension */;
+			target = 921856672CFB5A8F006672FE /* ArenaGamesWidgetExtension */;
+		};
+		9218570B2CFB6532006672FE /* Exceptions for "ArenaGames" folder in "ArenaGames" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ArenaGamesApp.swift,
+				ArenaListView.swift,
+				ArenaViewModel.swift,
+				Assets.xcassets,
+				AuthService.swift,
+				Models.swift,
+			);
+			target = 9218564C2CFB59F5006672FE /* ArenaGames */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		92B0470D2CFA3A2300C28924 /* ArenaGames */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ArenaGames;
-			sourceTree = "<group>";
-		};
-		92B047392CFB3FC500C28924 /* ArenaGamesWidget */ = {
+		9218566B2CFB5A8F006672FE /* ArenaGamesWidget */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				92B047482CFB3FC800C28924 /* Exceptions for "ArenaGamesWidget" folder in "ArenaGamesWidgetExtension" target */,
+				9218567A2CFB5A91006672FE /* Exceptions for "ArenaGamesWidget" folder in "ArenaGamesWidgetExtension" target */,
 			);
 			path = ArenaGamesWidget;
+			sourceTree = "<group>";
+		};
+		92B0470D2CFA3A2300C28924 /* ArenaGames */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				9218570B2CFB6532006672FE /* Exceptions for "ArenaGames" folder in "ArenaGames" target */,
+			);
+			path = ArenaGames;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		92B047082CFA3A2300C28924 /* Frameworks */ = {
+		9218564A2CFB59F5006672FE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		92B047302CFB3FC500C28924 /* Frameworks */ = {
+		921856652CFB5A8F006672FE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92B047382CFB3FC500C28924 /* SwiftUI.framework in Frameworks */,
-				92B047362CFB3FC500C28924 /* WidgetKit.framework in Frameworks */,
+				9218566A2CFB5A8F006672FE /* SwiftUI.framework in Frameworks */,
+				921856692CFB5A8F006672FE /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,7 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				92B0470D2CFA3A2300C28924 /* ArenaGames */,
-				92B047392CFB3FC500C28924 /* ArenaGamesWidget */,
+				9218566B2CFB5A8F006672FE /* ArenaGamesWidget */,
 				92B047342CFB3FC500C28924 /* Frameworks */,
 				92B0470C2CFA3A2300C28924 /* Products */,
 			);
@@ -102,8 +117,8 @@
 		92B0470C2CFA3A2300C28924 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				92B0470B2CFA3A2300C28924 /* ArenaGames.app */,
-				92B047332CFB3FC500C28924 /* ArenaGamesWidgetExtension.appex */,
+				9218564D2CFB59F5006672FE /* ArenaGames.app */,
+				921856682CFB5A8F006672FE /* ArenaGamesWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,50 +135,47 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		92B0470A2CFA3A2300C28924 /* ArenaGames */ = {
+		9218564C2CFB59F5006672FE /* ArenaGames */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 92B047192CFA3A2500C28924 /* Build configuration list for PBXNativeTarget "ArenaGames" */;
+			buildConfigurationList = 921856582CFB59F6006672FE /* Build configuration list for PBXNativeTarget "ArenaGames" */;
 			buildPhases = (
-				92B047072CFA3A2300C28924 /* Sources */,
-				92B047082CFA3A2300C28924 /* Frameworks */,
-				92B047092CFA3A2300C28924 /* Resources */,
-				92B0474C2CFB3FC800C28924 /* Embed Foundation Extensions */,
+				921856492CFB59F5006672FE /* Sources */,
+				9218564A2CFB59F5006672FE /* Frameworks */,
+				9218564B2CFB59F5006672FE /* Resources */,
+				9218567E2CFB5A91006672FE /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				92B047462CFB3FC800C28924 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				92B0470D2CFA3A2300C28924 /* ArenaGames */,
+				921856782CFB5A91006672FE /* PBXTargetDependency */,
 			);
 			name = ArenaGames;
 			packageProductDependencies = (
 			);
 			productName = ArenaGames;
-			productReference = 92B0470B2CFA3A2300C28924 /* ArenaGames.app */;
+			productReference = 9218564D2CFB59F5006672FE /* ArenaGames.app */;
 			productType = "com.apple.product-type.application";
 		};
-		92B047322CFB3FC500C28924 /* ArenaGamesWidgetExtension */ = {
+		921856672CFB5A8F006672FE /* ArenaGamesWidgetExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 92B047492CFB3FC800C28924 /* Build configuration list for PBXNativeTarget "ArenaGamesWidgetExtension" */;
+			buildConfigurationList = 9218567B2CFB5A91006672FE /* Build configuration list for PBXNativeTarget "ArenaGamesWidgetExtension" */;
 			buildPhases = (
-				92B0472F2CFB3FC500C28924 /* Sources */,
-				92B047302CFB3FC500C28924 /* Frameworks */,
-				92B047312CFB3FC500C28924 /* Resources */,
+				921856642CFB5A8F006672FE /* Sources */,
+				921856652CFB5A8F006672FE /* Frameworks */,
+				921856662CFB5A8F006672FE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				92B047392CFB3FC500C28924 /* ArenaGamesWidget */,
+				9218566B2CFB5A8F006672FE /* ArenaGamesWidget */,
 			);
 			name = ArenaGamesWidgetExtension;
 			packageProductDependencies = (
 			);
 			productName = ArenaGamesWidgetExtension;
-			productReference = 92B047332CFB3FC500C28924 /* ArenaGamesWidgetExtension.appex */;
+			productReference = 921856682CFB5A8F006672FE /* ArenaGamesWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -176,10 +188,11 @@
 				LastSwiftUpdateCheck = 1610;
 				LastUpgradeCheck = 1610;
 				TargetAttributes = {
-					92B0470A2CFA3A2300C28924 = {
+					9218564C2CFB59F5006672FE = {
 						CreatedOnToolsVersion = 16.1;
+						LastSwiftMigration = 1610;
 					};
-					92B047322CFB3FC500C28924 = {
+					921856672CFB5A8F006672FE = {
 						CreatedOnToolsVersion = 16.1;
 					};
 				};
@@ -198,21 +211,21 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				92B0470A2CFA3A2300C28924 /* ArenaGames */,
-				92B047322CFB3FC500C28924 /* ArenaGamesWidgetExtension */,
+				9218564C2CFB59F5006672FE /* ArenaGames */,
+				921856672CFB5A8F006672FE /* ArenaGamesWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		92B047092CFA3A2300C28924 /* Resources */ = {
+		9218564B2CFB59F5006672FE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		92B047312CFB3FC500C28924 /* Resources */ = {
+		921856662CFB5A8F006672FE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -222,14 +235,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		92B047072CFA3A2300C28924 /* Sources */ = {
+		921856492CFB59F5006672FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		92B0472F2CFB3FC500C28924 /* Sources */ = {
+		921856642CFB5A8F006672FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -239,14 +252,131 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		92B047462CFB3FC800C28924 /* PBXTargetDependency */ = {
+		921856782CFB5A91006672FE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 92B047322CFB3FC500C28924 /* ArenaGamesWidgetExtension */;
-			targetProxy = 92B047452CFB3FC800C28924 /* PBXContainerItemProxy */;
+			target = 921856672CFB5A8F006672FE /* ArenaGamesWidgetExtension */;
+			targetProxy = 921856772CFB5A91006672FE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		921856592CFB59F6006672FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 4685UZJP77;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Anton-Marchanka.ArenaGames";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9218565A2CFB59F6006672FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 4685UZJP77;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Anton-Marchanka.ArenaGames";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9218567C2CFB5A91006672FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4685UZJP77;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ArenaGamesWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ArenaGamesWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Anton-Marchanka.ArenaGames.ArenaGamesWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9218567D2CFB5A91006672FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4685UZJP77;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ArenaGamesWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ArenaGamesWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Anton-Marchanka.ArenaGames.ArenaGamesWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		92B047172CFA3A2500C28924 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -366,146 +496,32 @@
 			};
 			name = Release;
 		};
-		92B0471A2CFA3A2500C28924 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ArenaGames/Preview Content\"";
-				DEVELOPMENT_TEAM = 4685UZJP77;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Anton-Marchanka.ArenaGames";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		92B0471B2CFA3A2500C28924 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ArenaGames/Preview Content\"";
-				DEVELOPMENT_TEAM = 4685UZJP77;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Anton-Marchanka.ArenaGames";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		92B0474A2CFB3FC800C28924 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4685UZJP77;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ArenaGamesWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = ArenaGamesWidget;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Anton-Marchanka.ArenaGames.ArenaGamesWidget";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		92B0474B2CFB3FC800C28924 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4685UZJP77;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ArenaGamesWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = ArenaGamesWidget;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Anton-Marchanka.ArenaGames.ArenaGamesWidget";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		921856582CFB59F6006672FE /* Build configuration list for PBXNativeTarget "ArenaGames" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				921856592CFB59F6006672FE /* Debug */,
+				9218565A2CFB59F6006672FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9218567B2CFB5A91006672FE /* Build configuration list for PBXNativeTarget "ArenaGamesWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9218567C2CFB5A91006672FE /* Debug */,
+				9218567D2CFB5A91006672FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		92B047062CFA3A2300C28924 /* Build configuration list for PBXProject "ArenaGames" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				92B047172CFA3A2500C28924 /* Debug */,
 				92B047182CFA3A2500C28924 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		92B047192CFA3A2500C28924 /* Build configuration list for PBXNativeTarget "ArenaGames" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				92B0471A2CFA3A2500C28924 /* Debug */,
-				92B0471B2CFA3A2500C28924 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		92B047492CFB3FC800C28924 /* Build configuration list for PBXNativeTarget "ArenaGamesWidgetExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				92B0474A2CFB3FC800C28924 /* Debug */,
-				92B0474B2CFB3FC800C28924 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

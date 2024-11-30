@@ -43,16 +43,35 @@ struct SimpleEntry: TimelineEntry {
 
 struct ArenaGamesWidgetEntryView : View {
     var entry: Provider.Entry
-
+    var coins: [CoinModel] = availableCoins
     var body: some View {
         VStack {
             Text("Arena Games")
-            Text(entry.date, style: .time)
+                .fontWeight(.medium)
+                .padding(.top, 8)
+            ForEach(coins, id:\.name) { coin in
+                HStack {
+                    Image(coin.image)
+                        .resizable()
+                        .frame(width: 40, height: 40)
+                        .padding(4)
+                    VStack(alignment: .leading) {
+                        Text(coin.name)
+                            .fontWeight(.medium)
+                        Text(coin.blockchain)
+                            .fontWeight(.light)
 
-            Text("Favorite Emoji:")
-                .fontWeight(.semibold)
-            Text(entry.configuration.favoriteEmoji)
-                .fontWeight(.semibold)
+                    }
+                    Spacer()
+                    Text("\(Int(coin.balance))")
+                        .fontWeight(.light)
+                    Text(coin.currency.uppercased())
+                        .fontWeight(.light)
+                }
+                .padding(.horizontal, 8)
+                .padding(.vertical, 6)
+                .frame(maxWidth: .infinity, alignment: .leading)
+            }
         }
     }
 }
@@ -82,9 +101,9 @@ extension ConfigurationAppIntent {
     }
 }
 
-#Preview(as: .systemSmall) {
+#Preview(as: .systemExtraLarge) {
     ArenaGamesWidget()
 } timeline: {
     SimpleEntry(date: .now, configuration: .smiley)
-    SimpleEntry(date: .now, configuration: .starEyes)
 }
+

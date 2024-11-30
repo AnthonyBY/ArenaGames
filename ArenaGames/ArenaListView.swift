@@ -36,7 +36,7 @@ struct ArenaListView: View {
         }
         .task {
             do {
-                 try await viewModel.authService.signIn(login: "anthonyby7", password: "Funjy777!")
+                 try await viewModel.authService.signIn(login: "LOGIN", password: "PASSWORD")
              } catch {
                  print("Failed to sign in: \(error)")
              }
