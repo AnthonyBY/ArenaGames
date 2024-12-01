@@ -38,6 +38,7 @@ struct SimpleEntry: TimelineEntry {
 }
 
 struct ArenaGamesWidgetEntryView : View {
+    @AppStorage("sharedData", store: UserDefaults(suiteName: "Anton-Marchanka.ArenaGames")) var sharedData: String = "Default Value"
     var entry: Provider.Entry
     var coins: [CoinModel] = availableCoins
 
