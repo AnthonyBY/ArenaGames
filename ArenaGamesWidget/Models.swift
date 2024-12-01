@@ -17,8 +17,8 @@ struct CoinModel: Codable {
 
 let availableCoins = [
     CoinModel(name: "USDT", blockchain: "PLYGON", image: "usdt", balance: 0, currency: "USDT"),
-    CoinModel(name: "POL", blockchain: "POLYGON", image: "polygon", balance: 0, currency: "POL")
-  //  CoinModel(name: "Gorilla", blockchain: "Skale", image: "gorilla", balance: 2100, currency: "GT"),
+ //   CoinModel(name: "POL", blockchain: "POLYGON", image: "polygon", balance: 0, currency: "POL")
+    CoinModel(name: "Gorilla", blockchain: "Skale", image: "gorilla", balance: 2100, currency: "GT"),
    // CoinModel(name: "Manta", blockchain: "Manta", image: "manta", balance: 0, currency: "manta")
    // CoinModel(name: "LineaETH", blockchain: "LINEA", image: "lineaETH", balance: 0, currency: "eth")
 ]

@@ -10,6 +10,8 @@
 		921856692CFB5A8F006672FE /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92B047352CFB3FC500C28924 /* WidgetKit.framework */; };
 		9218566A2CFB5A8F006672FE /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92B047372CFB3FC500C28924 /* SwiftUI.framework */; };
 		921856792CFB5A91006672FE /* ArenaGamesWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 921856682CFB5A8F006672FE /* ArenaGamesWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		921857512CFC4FEE006672FE /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 921857502CFC4FEE006672FE /* Readme.md */; };
+		921857522CFC4FEE006672FE /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 921857502CFC4FEE006672FE /* Readme.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,7 @@
 /* Begin PBXFileReference section */
 		9218564D2CFB59F5006672FE /* ArenaGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArenaGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		921856682CFB5A8F006672FE /* ArenaGamesWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ArenaGamesWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		921857502CFC4FEE006672FE /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		92B047352CFB3FC500C28924 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		92B047372CFB3FC500C28924 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -107,6 +110,7 @@
 		92B047022CFA3A2300C28924 = {
 			isa = PBXGroup;
 			children = (
+				921857502CFC4FEE006672FE /* Readme.md */,
 				92B0470D2CFA3A2300C28924 /* ArenaGames */,
 				9218566B2CFB5A8F006672FE /* ArenaGamesWidget */,
 				92B047342CFB3FC500C28924 /* Frameworks */,
@@ -222,6 +226,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				921857522CFC4FEE006672FE /* Readme.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				921857512CFC4FEE006672FE /* Readme.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
