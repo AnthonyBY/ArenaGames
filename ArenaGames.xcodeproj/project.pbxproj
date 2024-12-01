@@ -62,7 +62,9 @@
 				ArenaViewModel.swift,
 				Assets.xcassets,
 				AuthService.swift,
+				AuthStore.swift,
 				Models.swift,
+				NetworkManager.swift,
 			);
 			target = 9218564C2CFB59F5006672FE /* ArenaGames */;
 		};
